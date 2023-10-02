@@ -9,7 +9,7 @@ void close_file(int fd);
  * create_buffer - Allocates 1024 bytes for a buffer.
  * @file: The name of the file buffer is storing chars for.
  *
- * Return: A pointer to the newly-allocated buffer.
+ * Return: A selector to the new.
  */
 char *create_buffer(char *file)
 {
@@ -45,12 +45,11 @@ void close_file(int fd)
 }
 
 /**
- * Return: 0 on success.
+ * main - Copies the contents of a file to another file.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  *
- * If the argument count is false - exit code 97.
- * If file_is no there -  code 98.
- * If file_to is not there -  code 99.
- * If file_to is not exiting -  code 100.
+ * Return: 0 on success.
  */
 int main(int argc, char *argv[])
 {
